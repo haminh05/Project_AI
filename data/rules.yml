@@ -1,0 +1,76 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Say 'Hello' anytime the user says hello
+    steps:
+      - intent: great
+      - action: utter_greet
+
+  # Phản hồi khi người dùng yêu cầu kể chuyện
+  - rule: Respond to a story request
+    steps:
+      - intent: share_story
+      - action: utter_share_story
+
+  # Phản hồi khi người dùng yêu cầu hát
+  - rule: Respond to a song request
+    steps:
+      - intent: sing_request
+      - action: utter_sing_request
+
+  # Phản hồi khi người dùng yêu cầu bài hát của J97
+  - rule: Respond to J97 song request
+    steps:
+      - intent: sing_j97_song
+      - action: utter_sing_j97_song
+
+  # Phản hồi khi người dùng yêu cầu bài hát của Sơn Tùng MTP
+  - rule: Respond to MTP song request
+    steps:
+      - intent: sing_mtp_song
+      - action: utter_sing_mtp_song
+
+  # Phản hồi khi người dùng yêu cầu làm thơ
+  - rule: Respond to a poetry request
+    steps:
+      - intent: poe_request
+      - action: utter_poe_request
+
+  # Đưa lời khuyên khi người dùng yêu cầu
+  - rule: Provide advice when requested
+    steps:
+      - intent: ask_advice
+      - action: utter_ask_advice
+
+  # Trả lời khi người dùng bày tỏ lòng biết ơn
+  - rule: Respond to gratitude
+    steps:
+      - intent: express_gratitude
+      - action: utter_express_gratitude
+
+  # Trả lời khi người dùng yêu cầu kể chuyện cười
+  - rule: Tell a joke when requested
+    steps:
+      - intent: joke_request
+      - action: utter_joke_request1
+
+  # Hỏi thăm người dùng
+  - rule: Ask the user how they are feeling
+    steps:
+      - intent: ask_feelings
+      - action: utter_ask_feelings
+
+  - rule: Fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback

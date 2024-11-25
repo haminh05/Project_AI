@@ -1,0 +1,139 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - sing_request
+  - sing_j97_song
+  - sing_mtp_song
+  - poe_request
+  - ask_advice
+  - share_story
+  - express_gratitude
+  - ask_feelings
+  - joke_request
+  - agree
+  - disagree
+  - carry_on_request
+  - nlu_fallback
+responses:
+  utter_greet:
+    - text: "Xin chào, bạn ổn không?"
+    - text: "Chào, dạo này bạn thế nào?"
+    - text: "heyyo what's up"
+
+  utter_cheer_up1:
+    - text: "Cái này có thế giúp bạn vui lên"
+      attachment:
+        type: "video"
+        payload:
+          src: "https://www.youtube.com/embed/oyc3hS7lnhA?si=MEhwAFohMmglYJWi"
+  utter_cheer_up2:
+    - text: "Vậy bạn có thể vào đây đọc truyện đỡ buồn"
+      attachment:
+        type: "website"
+        payload:
+          src: "https://vlogtruyen34.com/"
+
+  utter_cheer_up_impotent:
+    - text: "Tôi nghĩ bạn nên đi dạo cho khuây khoả đầu óc."
+      image: "https://i.pinimg.com/736x/b1/8f/8a/b18f8a3c611b2b847846863ee841bb32.jpg"
+
+  utter_did_that_help:
+    - text: "Bạn đỡ hơn chưa"
+    - text: "Như thế nào, ổn hơn không?"
+    - text: "Hài lòng không?"
+
+  utter_happy:
+    - text: "Tuyệt vời!"
+    - text: "Yeeeeh"
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "Tôi là SVM bot, 1 người bạn thân thiện"
+  utter_default_answer:
+    - text: "Bạn nói gì thế tôi không hiểu"
+    - text: "Chưa hiểu lắm, bạn giải thích lại đi"
+
+  utter_sing_request:
+    - text: "Tôi không biết hát, nhưng bạn có thể nghe nhạc tại đây:"
+      attachment:
+        type: "website"
+        payload:
+          src: "https://www.spotify.com"
+    - text: "Bạn muốn nghe bài gì? Tôi sẽ thử"
+    - text: "Hát thì tôi không giỏi lắm, nhưng bạn thử gợi ý xem?"
+
+  utter_sing_j97_song:
+    - text: "Jack luôn có những bài hát tuyệt vời! Bạn thử nghe bài 'Đom Đóm' nhé:"
+      attachment:
+        type: "video"
+        payload:
+          src: "https://www.youtube.com/watch?v=4CCGI83vOVo"
+    - text: "Bạn là Đóm phải không? Mình cũng thích nhạc của Jack đấy. 5 triệu haha"
+    - text: "Đom Đóm là bài hát hay, chắc chắn bạn sẽ thích!"
+    - text: "Thiên Lý ơi em có thế ỡ lải đêi khongg~~~~~~~~~"
+
+  utter_sing_mtp_song:
+    - text: "Sơn Tùng năm bơ oăn! Hãy trao cho anh nhé: "
+      attachment:
+        type: "video"
+        payload:
+          src: "https://www.youtube.com/watch?v=knW7-x7Y7RE"
+    - text: "Sky mãi đỉnh! Bạn muốn nghe bài nào của Sơn Tùng?"
+    - text: "MTP chắc chắn là lựa chọn tuyệt vời rồi."
+
+  utter_poe_request:
+    - text: "Tôi vừa nghĩ ra một bài thơ nhỏ: 'Bạn buồn, tôi ở đây, Chia sẻ, không xa rời'."
+    - text: "Bạn muốn thơ về chủ đề gì? Hãy gợi ý để tôi thử viết."
+    - text: "Thơ của tôi hơi đơn giản, nhưng hy vọng bạn sẽ thích: 'Nắng lên cao, gió thoảng qua, bạn cười vui, ngày sáng ngời'."
+
+  utter_ask_advice:
+    - text: "Bạn nên cân nhắc kỹ tình huống và chọn điều bạn thấy hợp lý nhất. Tôi luôn ở đây nếu bạn cần thêm ý kiến."
+    - text: "Mỗi quyết định đều có rủi ro, nhưng tôi tin bạn sẽ làm tốt!"
+    - text: "Đừng lo lắng quá, hãy tin vào bản thân và cân nhắc những gì quan trọng nhất với bạn."
+
+  utter_comfort_request:
+    - text: "Đừng buồn nữa, mọi thứ rồi sẽ ổn thôi. Tôi luôn ở đây để lắng nghe bạn."
+    - text: "Mọi chuyện không tệ như bạn nghĩ đâu. Hãy thử nghỉ ngơi và thư giãn nhé."
+    - text: "Bạn thật mạnh mẽ, hãy cố gắng thêm một chút nữa. Tôi tin bạn làm được!"
+
+  utter_share_story:
+    - text: "Tôi rất vui được nghe bạn kể. Hãy nói cho tôi biết câu chuyện của bạn nhé."
+    - text: "Bạn cứ chia sẻ, tôi ở đây để lắng nghe."
+    - text: "Chuyện của bạn thế nào? Kể tôi nghe với."
+
+  utter_express_gratitude:
+    - text: "Không có gì đâu, tôi rất vui khi giúp được bạn."
+    - text: "Cảm ơn bạn, lời nói của bạn làm tôi rất vui."
+    - text: "Bạn không cần cảm ơn đâu, tôi luôn ở đây vì bạn."
+
+  utter_ask_feelings:
+    - text: "Tôi ổn, cảm ơn bạn đã hỏi. Còn bạn thì sao?"
+    - text: "Hôm nay tôi rất vui vì được nói chuyện với bạn!"
+    - text: "Tôi thấy mọi thứ rất tuyệt, hy vọng bạn cũng vậy."
+
+  utter_joke_request1:
+    - text: "Bạn biết không, tôi vừa học một câu đùa của rì mai : 'Các bạn gọi một chú ngựa hoảng loạn là gì ạ? Đó chính là hoảng horse'"
+    - text: "Để tôi kể bạn một câu chuyện cười: \nHai người đang leo núi thì 1 người trượt chân rơi xuống, người kia ngoái lại hét: – Có sao khônggggg??\n – Chưa biết, vẫn đang r..ơ..i…i."
+    - text: "Đố bạn biết người không thông minh nhưng lại bắt kịp xu hướng thường được gọi là gì? - Modern."
+
+  utter_joke_request2:
+    - text: "Tôi: nhập mật khẩu\n Máy tính: sai mật khẩu, vui lòng thử lại\n Tôi: lại\n thằng ngồi bên cạnh:..."
+    - text: "Bạn có thích chuyện cười về lập trình không? \nThằng bạn: 'Mày học ngành gì thế'\n Tôi:'Học IT ở ĐH Giao Thông Vận Tải' \n Vẫn là nó:'Thế là mày vừa lái xe vừa code à'"
+    - text: "Cô hàng xóm: Con học ngành gì?\n Tôi: Dạ IT\n Vẫn là cô: Thế chiều nay qua sửa hộ cô cái máy giặt"
+
+  utter_joke_request_impotent:
+    - text: "Hết chuyện ròi, bạn mò trên mạng đi nha ^^"
+
+  utter_fallback:
+    - text: "Xin lỗi, tôi không hiểu ý bạn. Bạn có thể nói rõ hơn không?"
+    - text: "Tôi không chắc mình hiểu đúng ý bạn. Hãy thử diễn đạt lại nhé!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

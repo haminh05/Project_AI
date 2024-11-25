@@ -1,0 +1,347 @@
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - Xin chào
+      - Chào
+      - Chào bạn
+      - Mình chào bạn
+      - Nihao
+      - Alo
+      - Hey
+      - Ê
+      - Hú
+      - Hello mọi người
+      - Chào buổi sáng
+      - Chào buổi tối
+      - Dạ chào
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good bye
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - Hẹn gặp lại
+      - Tạm biệt
+      - Gặp sau nhé
+      - Bye nhé
+      - Tạm biệt bạn
+      - Bye bye nha
+      - Gặp lại sau
+      - Chào nhé
+      - Chúc bạn vui
+      - Đi đây
+      - Xin chào tạm biệt
+
+  - intent: agree
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - ừ
+      - ừm
+      - yep
+      - đr
+      - đúng
+      - vâng
+      - rồi
+      - chính xác
+      - chuẩn rồi
+      - đương nhiên
+      - chắc chắn
+      - ok
+      - đồng ý
+      - tất nhiên rồi
+      - chính xác mà
+      - chắc chắn là vậy
+      - chuẩn không cần chỉnh
+      - Tôi đồng ý
+      - Chắc chắn rồi
+      - Chuẩn đấy
+      - Tôi nghĩ vậy
+      - Đúng là vậy
+      - Tôi hoàn toàn đồng ý
+      - Chắc luôn
+      - Chính xác
+      - Tôi cũng nghĩ thế
+      - Tôi hiểu bạn
+      - Không có gì sai cả
+      - Tất nhiên rồi
+  - intent: disagree
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - nope
+      - k
+      - kh
+      - không
+      - đéo
+      - chưa
+      - nah
+      - không hẳn
+      - không thích
+      - chưa chắc đâu
+      - sai rồi
+      - không đồng ý
+      - đừng
+      - thôi đi
+      - không đâu
+      - không đời nào
+      - không phải đâu
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - Vui
+      - yêu đời
+      - sướng
+      - tích cực
+      - phiêu
+      - tràn đầy năng lượng
+      - thật tuyệt
+      - tốt lắm
+      - mình cảm thấy ổn
+      - mọi thứ đều tốt
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+      - chán
+      - buồn
+      - bứ
+      - tuyệt vọng
+      - thất vọng
+      - mệt mỏi
+      - áp lực
+      - không ổn chút nào
+      - tệ quá
+      - chẳng vui tí nào
+      - đau lòng
+      - Làm tôi vui đi
+      - làm tôi cười
+      - chọc tôi đi
+      - Bạn an ủi tôi được không?
+      - Nói gì đó để tôi vui đi
+      - Tôi buồn quá, giúp tôi với
+      - An ủi tôi chút đi
+      - Nói gì đó tích cực được không?
+      - Tôi cần bạn lắm
+      - Hãy giúp tôi bình tĩnh lại
+      - Bạn luôn làm tôi cảm thấy tốt hơn
+      - Tôi cần bạn bên cạnh
+      - Hãy ở đây với tôi
+      - Làm tôi bớt buồn đi
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - Bạn có phải là bot không?
+      - Bạn có phải người không?
+      - Tôi đang nói chuyện với bot phải không?
+      - Tôi đang nói chuyện với người đúng không?
+      - Bạn là robot hả?
+      - Có phải bạn là chatbot không?
+      - Tôi đoán bạn là bot?
+      - Bạn là AI đúng không?
+      - Bạn có phải là trí tuệ nhân tạo không?
+      - Bạn là người hay bot?
+      - Nói thật, bạn là gì?
+
+  - intent: sing_request
+    examples: |
+      - Bạn hát cho tôi nghe đi
+      - Hát đi
+      - Hát bài nào đó
+      - Hát một bài vui vui
+      - Hát đi nào
+      - Cất tiếng hát đi
+      - Hát cho tôi nghe
+      - Bạn biết hát không?
+      - Hát giúp tôi
+      - Có bài nào hay không? Hát thử đi
+      - Hát bài gì mà bạn thích đi
+      - Hát thử đi, nghe xem hay không
+      - Tặng tôi bài hát đi
+
+  - intent: sing_j97_song
+    examples: |
+      - J97
+      - Nhạc J97
+      - Nhạc Jack
+      - Đom Đóm
+      - Trịnh Trần Phương Tuấn
+      - Nghe Jack hát đi
+      - Có bài nào của Jack không?
+      - Bạn biết Jack không?
+      - Bài hát Đom Đóm
+      - Jack, J97
+      - Cảm giác của Jack thế nào?
+      - Tình yêu của Đom Đóm đâu?
+
+  - intent: sing_mtp_song
+    examples: |
+      - MTP
+      - Sơn Tùng
+      - Sky
+      - Hãy trao cho anh
+      - Bài mới của Sơn Tùng đâu?
+      - Có gì hot từ Sơn Tùng không?
+      - Sơn Tùng hát bài gì nhỉ?
+      - MTP thật phong cách
+      - Sky forever
+      - Mình nghe "Chạy ngay đi"
+      - Hãy trao cho anh Sơn Tùng
+      - MTP là idol bạn à?
+
+  - intent: poe_request
+    examples: |
+      - Làm thơ đi
+      - Viết thơ
+      - Làm 1 bài thơ
+      - Bạn biết làm thơ không?
+      - Thơ hay thơ dở cũng được
+      - Làm bài thơ tình đi
+      - Thử xem bạn làm thơ thế nào
+      - Viết thơ vui vui nhé
+      - Viết thơ giúp tôi đi
+      - Thơ gì cũng được
+      - Tặng tôi một bài thơ
+      - Có bài thơ nào hay không?
+
+  - intent: ask_advice
+    examples: |
+      - Bạn nghĩ sao về chuyện này?
+      - Tôi nên làm gì bây giờ?
+      - Cho mình lời khuyên đi
+      - Bạn có ý tưởng nào không?
+      - Bạn nghĩ tôi nên chọn gì?
+      - Giúp tôi quyết định đi
+      - Bạn từng gặp chuyện này chưa?
+      - Làm sao để giải quyết đây?
+      - Chuyện của tôi khó quá, bạn nghĩ sao?
+      - Bạn làm gì trong trường hợp này?
+      - Bạn có lời khuyên nào không?
+
+  - intent: share_story
+    examples: |
+      - Tôi kể bạn nghe chuyện này
+      - Nghe câu chuyện của tôi không?
+      - Tôi muốn chia sẻ điều này với bạn
+      - Bạn có muốn nghe chuyện của tôi không?
+      - Tôi cần nói điều này với bạn
+      - Chuyện của tôi thế này
+      - Bạn có muốn nghe tôi tâm sự không?
+      - Để tôi kể bạn nghe
+      - Có câu chuyện thú vị tôi muốn chia sẻ
+      - Tôi muốn nói về chuyện này
+      - Câu chuyện của tôi thật buồn
+      - Bạn có rảnh nghe tôi nói chút không?
+
+  - intent: express_gratitude
+    examples: |
+      - Cảm ơn bạn nhé
+      - Cảm ơn nhiều lắm
+      - Tôi biết ơn bạn
+      - Nhờ bạn mà tôi ổn hơn
+      - Bạn thật tốt bụng
+      - Bạn làm tôi thấy rất vui
+      - Biết ơn vì bạn đã lắng nghe
+      - Cảm ơn bạn đã ở đây
+      - Cảm ơn rất nhiều
+      - Tôi cảm thấy biết ơn
+      - Cảm ơn vì đã giúp tôi
+      - Bạn thật tuyệt vời
+
+  - intent: ask_feelings
+    examples: |
+      - Bạn cảm thấy thế nào?
+      - Dạo này bạn ổn không?
+      - Tâm trạng bạn hôm nay thế nào?
+      - Mọi thứ của bạn ổn chứ?
+      - Bạn có buồn không?
+      - Bạn có vui không?
+      - Hôm nay có gì đặc biệt không?
+      - Bạn ổn chứ?
+      - Sức khỏe bạn sao rồi?
+      - Tâm trạng bạn tốt không?
+
+  - intent: joke_request
+    examples: |
+      - Kể chuyện cười đi
+      - Có chuyện gì vui kể nghe xem
+      - Kể cho tôi chuyện hài đi
+      - Làm tôi cười chút đi
+      - Có gì hài hước không?
+      - Kể câu chuyện cười bạn biết đi
+      - Chọc tôi cười đi
+      - Kể chuyện gì đó vui lên
+      - Chuyện gì hài hước không?
+      - Kể cái gì vui vui đi
+
+  - intent: carry_on_request
+    examples: |
+      - tiếp đi
+      - nữa
+      - tiếp
+      - thêm
+      - thêm nữa
+      - nữa đi
+      - tôi muốn nghe thêm
+      - khác đi
+      - câu chuyện khác đi

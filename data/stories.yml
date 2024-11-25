@@ -1,0 +1,98 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up1
+      - action: utter_did_that_help
+      - intent: agree
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up1
+      - action: utter_did_that_help
+      - intent: disagree
+      - action: utter_cheer_up2
+      - intent: disagree
+      - action: utter_cheer_up_impotent
+  # Luồng yêu cầu hát
+  - story: sing request
+    steps:
+      - intent: sing_request
+      - action: utter_sing_request
+
+  # Luồng yêu cầu bài hát của J97
+  - story: sing j97 song
+    steps:
+      - intent: sing_j97_song
+      - action: utter_sing_j97_song
+
+  # Luồng yêu cầu bài hát của Sơn Tùng MTP
+  - story: sing mtp song
+    steps:
+      - intent: sing_mtp_song
+      - action: utter_sing_mtp_song
+
+  # Luồng yêu cầu làm thơ
+  - story: poetry request
+    steps:
+      - intent: poe_request
+      - action: utter_poe_request
+
+  # Luồng yêu cầu lời khuyên
+  - story: ask for advice
+    steps:
+      - intent: ask_advice
+      - action: utter_ask_advice
+
+  # Luồng chia sẻ câu chuyện
+  - story: share a story
+    steps:
+      - intent: share_story
+      - action: utter_share_story
+
+  # Luồng bày tỏ lòng biết ơn
+  - story: express gratitude
+    steps:
+      - intent: express_gratitude
+      - action: utter_express_gratitude
+
+  # Luồng hỏi thăm cảm xúc
+  - story: ask feelings
+    steps:
+      - intent: ask_feelings
+      - action: utter_ask_feelings
+
+  # Luồng yêu cầu kể chuyện cười
+  - story: joke request
+    steps:
+      - intent: joke_request
+      - action: utter_joke_request1
+
+  - story: joke another request
+    steps:
+      - intent: joke_request
+      - action: utter_joke_request1
+      - intent: carry_on_request
+      - action: utter_joke_request2
+      - intent: carry_on_request
+      - action: utter_joke_request_impotent
+
+  - story: fallback response
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback
